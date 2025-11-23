@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>About Us | Fatima Nadeem</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<style>
+  body{
+    margin:0;
+    font-family:"Poppins",sans-serif;
+    background:#FFFFFF;
+    color:#e4e6eb;
+  }
+  .container{
+    width:85%;
+    margin:auto;
+    padding:40px 0;
+  }
+
+  /* Intro box */
+  .intro{
+    background:#1A1F2B;
+    padding:40px;
+    border-radius:15px;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    flex-wrap:wrap;
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  /* lift intro slightly on hover */
+  .intro:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px #001F66, 0 0 36px #001F66, 0 0 60px #001F66;
+  }
+
+  .intro img{
+    width:270px;
+    height:270px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #001F66;
+    box-shadow:0 0 16px #001F66;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .intro img:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 26px #001F66, 0 0 48px #001F66;
+  }
+
+  h1{
+    margin:0 0 8px 0;
+    font-size:36px;
+    color:#FFFFFF; /* name white */
+    text-shadow:none; /* no glow */
+  }
+  p{
+    margin:0;
+    font-size:17px;
+    line-height:1.6;
+    color:#d8e5ff;
+  }
+
+  /* Tabs */
+  .tabs{ margin:15px 0; }
+  .tabs a{
+    text-decoration:none;
+    padding:10px 18px;
+    margin-right:12px;
+    border-radius:6px;
+    background:#003366;
+    color:#FFFFFF;
+    font-weight:600;
+    display:inline-block;
+    transition: transform 0.18s ease, box-shadow 0.25s ease, background 0.2s ease;
+  }
+  .tabs a:hover,
+  .tabs a:active{
+    transform: translateY(-5px);          /* lift */
+    box-shadow:
+      0 0 10px #001F66,
+      0 0 20px #001F66,
+      0 0 30px #001F66,
+      0 6px 20px rgba(0,0,0,0.15);
+    background:#003366;
+    color:#FFFFFF;
+  }
+
+  /* small responsive */
+  @media(max-width:720px){
+    .intro img{ width:200px; height:200px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="intro">
+      <img src="myphoto.jpeg.jpeg" alt="Fatima Nadeem" />
+      <div>
+        <h1>Fatima Nadeem</h1>
+
+        <div class="tabs">
+          <a href="aboutus.html">About Us</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <p>Hello! I'm Fatima Nadeem, a student enrolled in Kinnaird College for Women University at the Department of Computer Science. I have a strong passion for helping others. I love learning new things and showing my creativity in my projects. Currently, I am learning HTML and CSS. My learning journey represents my creativity, designing capability, and growing skills in building clean and stylish websites.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

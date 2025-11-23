@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects | Fatima Nadeem</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<style>
+  body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#1A1F2B; /* blue background */
+    color:#fff;
+  }
+  .container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px;
+  }
+
+  /* Tabs */
+  .tabs{ margin-bottom:20px; }
+  .tabs a{
+    text-decoration:none;
+    padding:10px 18px;
+    margin-right:12px;
+    border-radius:6px;
+    background:#003366;
+    color:#fff;
+    font-weight:600;
+    display:inline-block;
+    transition: transform 0.18s ease, box-shadow 0.25s ease, background 0.2s ease;
+  }
+  .tabs a:hover,
+  .tabs a:active{
+    transform: translateY(-5px); /* lift */
+    box-shadow:
+      0 0 10px #001F66,
+      0 0 20px #001F66,
+      0 0 30px #001F66,
+      0 6px 20px rgba(0,0,0,0.12);
+    background:#003366;
+    color:#fff;
+  }
+
+  /* Section card */
+  .section{
+    background:#FFFFFF;
+    color:#1A1F2B;
+    margin-bottom:30px;
+    padding:25px 30px;
+    border-radius:10px;
+    transition: transform 0.18s ease, box-shadow 0.25s ease;
+  }
+  .section:hover{
+    transform: translateY(-6px); /* lift section */
+    box-shadow: 0 0 15px #001F66, 0 0 30px #001F66, 0 0 45px #001F66;
+  }
+
+  /* Skills list */
+  ul{ padding-left:20px; margin:0; }
+  ul li{
+    margin-bottom:12px;
+    font-size:17px;
+    display:flex;
+    align-items:center;
+  }
+  ul li i{
+    margin-left:10px;
+    font-size:20px;
+    color:#001F66;
+    transition: transform 0.18s ease, text-shadow 0.25s ease;
+  }
+  ul li i:hover{
+    transform: translateY(-4px); /* lift icon */
+    text-shadow: 0 0 6px #001F66, 0 0 14px #001F66;
+  }
+
+  /* Project cards grid */
+  .project-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  .project-card{
+    flex:1 1 calc(33% - 20px);
+    background:#fff;
+    color:#1A1F2B;
+    border-radius:10px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    transition: transform 0.18s ease, box-shadow 0.25s ease, color 0.18s ease;
+  }
+  .project-card:hover{
+    transform: translateY(-8px); /* stronger lift for cards */
+    box-shadow: 0 0 18px #001F66, 0 0 36px #001F66, 0 10px 30px rgba(0,0,0,0.12);
+    color:#001F66;
+  }
+  .project-card i{
+    font-size:28px;
+    color:#001F66;
+    transition: transform 0.18s ease;
+  }
+  .project-card:hover i{ transform: translateY(-6px); }
+
+  @media(max-width:900px){
+    .project-card{ flex:1 1 calc(50% - 20px); }
+  }
+  @media(max-width:600px){
+    .project-card{ flex:1 1 100%; }
+    .intro img{ width:200px; height:200px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <a href="aboutus.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="section">
+      <h2 style="margin-top:0;">Skills</h2>
+      <ul>
+        <li>Semantic HTML <i class="fab fa-html5"></i></li>
+        <li>Responsive CSS <i class="fab fa-css3-alt"></i></li>
+        <li>Typography <i class="fas fa-font"></i></li>
+        <li>GitHub <i class="fab fa-github"></i></li>
+        <li>C++ <i class="fas fa-code"></i></li>
+        <li>Canva <i class="fas fa-paint-brush"></i></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 style="margin-top:0;">Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <i class="fas fa-laptop-code"></i>
+          <span>2-Page Portfolio Website</span>
+        </div>
+
+        <div class="project-card">
+          <i class="fas fa-calculator"></i>
+          <span>Calculator Layout UI</span>
+        </div>
+
+        <div class="project-card">
+          <i class="fas fa-id-card"></i>
+          <span>Profile Card Component</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
